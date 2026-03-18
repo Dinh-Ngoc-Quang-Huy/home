@@ -1,149 +1,306 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tất cả dự án | Quang Huy</title>
+  <meta name="description" content="Danh sách tất cả dự án thiết kế kết cấu của Đinh Ngọc Quang Huy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="images/QH_Tools.ico" type="image/x-icon">
 </head>
 <body>
+
+  <!-- ════ Header ════ -->
   <header class="topbar">
     <div class="container row">
       <div class="logo">QuangHuy</div>
 
-      <nav class="nav">
-        <a href="index.html#about">Giới thiệu</a>
-        <a href="projects.html">Dự án</a>
-        <a href="index.html#contact">Liên hệ</a>
+      <button class="hamburger" id="menuBtn" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html#about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="projects.html" data-i18n="nav.projects">Dự án</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Liên hệ</a>
       </nav>
 
-      <a class="btn" href="index.html">← Về trang chủ</a>
+      <div class="header-actions">
+        <div class="lang-toggle" id="langToggle">
+          <button class="active" data-lang="vi">VIE</button>
+          <button data-lang="en">ENG</button>
+        </div>
+        <div class="theme-toggle" id="themeToggle">
+          <button class="active" id="themeDark" title="Dark mode">🌙</button>
+          <button id="themeLight" title="Light mode">☀️</button>
+        </div>
+        <a class="btn" href="index.html" data-i18n="nav.back">← Về trang chủ</a>
+      </div>
     </div>
   </header>
 
+  <!-- ════ Main Content ════ -->
   <main class="container">
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+      <span class="section-label">PORTFOLIO</span>
+      <div class="hero-badge">
+        🏗️ Portfolio
+        <span class="count">12</span>
+      </div>
+      <h1 data-i18n="projects.page_title">Tất cả dự án</h1>
+      <p class="sub" style="margin: 0 auto; text-align: center;">
+        <span data-i18n="projects.page_sub">Danh sách đầy đủ các dự án mình đã tham gia thiết kế, kiểm định và thi công.</span><br>
+        <span data-i18n="projects.page_sub2">Bấm vào Xem chi tiết để tìm hiểu thêm về từng dự án!</span>
+      </p>
+    </section>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <span class="filter-tag active" data-filter="all" data-i18n="filter.all">Tất cả</span>
+      <span class="filter-tag" data-filter="kiem-dinh" data-i18n="filter.kiem_dinh">Kiểm định</span>
+      <span class="filter-tag" data-filter="chung-cu" data-i18n="filter.chung_cu">Chung cư</span>
+      <span class="filter-tag" data-filter="cong-trinh" data-i18n="filter.cong_trinh">Công trình</span>
+      <span class="filter-tag" data-filter="du-lich" data-i18n="filter.du_lich">Du lịch</span>
+    </div>
+
     <section class="section">
-      <h1>Tất cả dự án</h1>
-      <p class="sub">Danh sách đầy đủ các dự án mình đã làm / đang làm.<br>
-      Để xem thêm vui lòng bấm vào xem chi tiết của từng dự án!</p>
+      <div class="grid">
 
+        <!-- 1 -->
+        <article class="project" data-category="cong-trinh" style="--i:0">
+          <div class="project-img-wrap">
+            <img src="images/UBND.jpg" alt="UBND HCM" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-cong-trinh" data-i18n="tag.cong_trinh">Công trình</span>
+            <h3 data-i18n="project.ubnd">Uỷ Ban Nhân Dân Thành Phố Hồ Chí Minh</h3>
+            <a class="link" href="projects/ubnd.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
 
-  <div class="grid">
-    <article class="project">
-      <h3>Uỷ Ban Nhân Dân Thành Phố Hồ Chí Minh</h3>
-      <img src="images/UBND.jpg" alt="UBND HCM" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
+        <!-- 2 -->
+        <article class="project" data-category="chung-cu" style="--i:1">
+          <div class="project-img-wrap">
+            <img src="images/APT.png" alt="Chung cư An Phú Tây" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-chung-cu" data-i18n="tag.chung_cu">Chung cư</span>
+            <h3 data-i18n="project.apt">Chung cư An Phú Tây — An Quý Tây, Huyện Bình Chánh, TP.HCM</h3>
+            <a class="link" href="projects/apt.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="project" data-category="kiem-dinh" style="--i:2">
+          <div class="project-img-wrap">
+            <img src="images/CircleK.jpg" alt="Circle K" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-kiem-dinh" data-i18n="tag.kiem_dinh">Kiểm định</span>
+            <h3 data-i18n="project.circlek">Đánh Giá Rủi Ro Chuỗi Cửa Hàng Tiện Lợi Circle-K</h3>
+            <a class="link" href="projects/circlek.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="project" data-category="kiem-dinh" style="--i:3">
+          <div class="project-img-wrap">
+            <img src="images/Wendelbo.png" alt="Wendelbo" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-kiem-dinh" data-i18n="tag.kiem_dinh">Kiểm định</span>
+            <h3 data-i18n="project.wendelbo">Kiểm Định Nhà Xưởng Công Ty Wendelbo Đông Nam Á</h3>
+            <a class="link" href="projects/wendelbo.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="project" data-category="kiem-dinh" style="--i:4">
+          <div class="project-img-wrap">
+            <img src="images/Mavin.jpg" alt="Mavin" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-kiem-dinh" data-i18n="tag.kiem_dinh">Kiểm định</span>
+            <h3 data-i18n="project.mavin">Kiểm Định Xilo Mavin — Công Ty MAVIN AUSTFEED, Đồng Tháp</h3>
+            <a class="link" href="projects/mavin.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="project" data-category="kiem-dinh" style="--i:5">
+          <div class="project-img-wrap">
+            <img src="images/TDS.png" alt="Tâm Dũng Sơn" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-kiem-dinh" data-i18n="tag.kiem_dinh">Kiểm định</span>
+            <h3 data-i18n="project.tds">Kiểm Định Mái Nhà Xưởng Lắp Đặt Pin Năng Lượng Mặt Trời</h3>
+            <a class="link" href="projects/tds.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="project" data-category="kiem-dinh" style="--i:6">
+          <div class="project-img-wrap">
+            <img src="images/Maybay.png" alt="Kho máy bay" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-kiem-dinh" data-i18n="tag.kiem_dinh">Kiểm định</span>
+            <h3 data-i18n="project.maybay">Kiểm Định Kho Bảo Dưỡng Nội Thất Máy Bay Tân Sơn Nhất</h3>
+            <a class="link" href="projects/maybay.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="project" data-category="chung-cu" style="--i:7">
+          <div class="project-img-wrap">
+            <img src="images/Ktown.png" alt="K-Town Nhà Bè" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-chung-cu" data-i18n="tag.chung_cu">Chung cư</span>
+            <h3 data-i18n="project.ktown">Chung cư The K-Town, Huyện Nhà Bè, TP.HCM</h3>
+            <a class="link" href="projects/ktown.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="project" data-category="chung-cu" style="--i:8">
+          <div class="project-img-wrap">
+            <img src="images/PhuocThinh.png" alt="Phước Thịnh Q12" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-chung-cu" data-i18n="tag.chung_cu">Chung cư</span>
+            <h3 data-i18n="project.phuocthinh">Khu Dân Cư Phước Thịnh, Quận 12, TP.HCM</h3>
+            <a class="link" href="projects/phuocthinh.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="project" data-category="cong-trinh" style="--i:9">
+          <div class="project-img-wrap">
+            <img src="images/Vyda.jpg" alt="Vỹ Dạ Huế" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-cong-trinh" data-i18n="tag.cong_trinh">Công trình</span>
+            <h3 data-i18n="project.vyda">Khu Dịch Vụ Thương Mại ARIYANA Vỹ Dạ, Huế</h3>
+            <a class="link" href="projects/vyda.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="project" data-category="cong-trinh" style="--i:10">
+          <div class="project-img-wrap">
+            <img src="images/MeTri.jpg" alt="Villa Mễ Trì Hà Nội" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-cong-trinh" data-i18n="tag.cong_trinh">Công trình</span>
+            <h3 data-i18n="project.metri">Villa Mễ Trì, Huyện Đông Anh, TP. Hà Nội</h3>
+            <a class="link" href="projects/metri.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="project" data-category="du-lich" style="--i:11">
+          <div class="project-img-wrap">
+            <img src="images/Vyda.jpg" alt="Khánh Hải" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-du-lich" data-i18n="tag.du_lich">Du lịch</span>
+            <h3 data-i18n="project.khanhhai">Khu Du Lịch Khách Sạn Và Giải Trí Phức Hợp Khánh Hải</h3>
+            <a class="link" href="projects/khanhhai.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+
       </div>
-    </article>
- <article class="project">
-      <h3>Chung cư An Phú Tây - An Quý Tây Huyện Bình Chánh TP.HCM</h3>
-      <img src="images/APT.png" alt="APT" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <h3>Đánh Giá Rủi Ro Chuỗi Cửa Hàng Tiện Lợi Circle-K</h3>
-      <img src="images/CircleK.jpg" alt="Circle K" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
- <article class="project">
-      <h3>Kiểm Định Nhà Xưởng Công Ty Wendelbo Đông Nam Á </h3>
-      <img src="images/Wendelbo.png" alt="Wendelbo" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <h3>Kiểm Định Xilo Mavin Công Ty MAVIN AUSTFEED Đồng Tháp</h3>
-      <img src="images/Mavin.jpg" alt="Mavin" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-  <article class="project">
-      <h3>Kiểm Định Mái Nhà Xưởng Lắp Đặt Pin Năng Lượng Mặt Trời </h3>
-      <img src="images/TDS.png" alt="Tâm Dũng Sơn" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <h3>Kiểm Định Kho Bảo Dưỡng Nội Thất Máy Bay Tân Sơn Nhất</h3>
-      <img src="images/Maybay.png" alt="Kho máy bay" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-  
-  <article class="project">
-      <h3>Chung cư the K-Town Huyện Nhà Bè, TP.HCM</h3>
-      <img src="images/Ktown.png" alt="Ktown nhà bè" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-    
-    <article class="project">
-      <h3>Khu Dân Cư Phước Thịnh, Quận 12, TP.HCM</h3>
-      <img src="images/PhuocThinh.png" alt="Phước thịnh Q12" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-  
- <article class="project">
-      <h3>Khu Dịch Vụ Thương Mại ARIYANA Vỹ Dạ Huế</h3>
-      <img src="images/Vyda.jpg" alt="Vỹ Dạ Huế" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
- <article class="project">
-      <h3>Villa Mễ Trì Huyện Đông Anh TP.Hà Nội </h3>
-      <img src="images/MeTri.jpg" alt="Viila Mễ Trì Hà Nội" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-<article class="project">
-      <h3>Khu Du Lịch Khách Sạn Và Gỉai Trí Phức Hợp Khánh Hải </h3>
-      <img src="images/MeTri.jpg" alt="Viila Mễ Trì Hà Nội" class="project-image" />
-      <div class="row gap">
-         <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
-      </div>
-    </article>
-
-
-
-
-  
-  </div>
-
-</section>
-
-
+    </section>
 
     <footer class="footer">
-      © <span id="year"></span> Quang Huy
+      © <span id="year"></span> <span data-i18n="footer.copy">Quang Huy — Thiết kế với ❤️</span>
     </footer>
   </main>
 
+  <!-- Scripts -->
+  <script src="lang.js"></script>
   <script>
+    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ─── Theme toggle (pill style) ───
+    const themeDark = document.getElementById("themeDark");
+    const themeLight = document.getElementById("themeLight");
+
+    function setTheme(mode) {
+      if (mode === "light") {
+        document.body.classList.add("light");
+        themeLight.classList.add("active");
+        themeDark.classList.remove("active");
+      } else {
+        document.body.classList.remove("light");
+        themeDark.classList.add("active");
+        themeLight.classList.remove("active");
+      }
+      localStorage.setItem("portfolio-theme", mode);
+    }
+
+    const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+    setTheme(savedTheme);
+
+    themeDark.addEventListener("click", () => setTheme("dark"));
+    themeLight.addEventListener("click", () => setTheme("light"));
+
+    // ─── Language toggle (pill style) ───
+    const langToggle = document.getElementById("langToggle");
+    const langBtns = langToggle.querySelectorAll("button");
+
+    langBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang");
+        langBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyLanguage(lang);
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("portfolio-lang") || "vi";
+      langBtns.forEach(b => {
+        b.classList.toggle("active", b.getAttribute("data-lang") === saved);
+      });
+    });
+
+    // Mobile hamburger
+    const menuBtn = document.getElementById("menuBtn");
+    const mainNav = document.getElementById("mainNav");
+    menuBtn.addEventListener("click", () => {
+      mainNav.classList.toggle("open");
+    });
+
+    // Filter bar — actual filtering
+    const filterTags = document.querySelectorAll(".filter-tag");
+    const projects = document.querySelectorAll(".project[data-category]");
+
+    filterTags.forEach(tag => {
+      tag.addEventListener("click", () => {
+        filterTags.forEach(t => t.classList.remove("active"));
+        tag.classList.add("active");
+
+        const filter = tag.getAttribute("data-filter");
+
+        projects.forEach((project, idx) => {
+          const cat = project.getAttribute("data-category");
+          if (filter === "all" || cat === filter) {
+            project.classList.remove("hidden");
+            project.style.setProperty("--i", idx);
+          } else {
+            project.classList.add("hidden");
+          }
+        });
+      });
+    });
   </script>
 </body>
 </html>

@@ -1,137 +1,292 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Đinh Ngọc Quang Huy | Portfolio</title>
+  <meta name="description"
+    content="Portfolio của Đinh Ngọc Quang Huy — Kỹ Sư Thiết Kế Kết Cấu, chuyên gia VBA & phần mềm kỹ thuật.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/QH_Tools.ico" type="image/png">
+  <link rel="icon" href="images/QH_Tools.ico" type="image/x-icon">
 </head>
+
 <body>
-  <!-- Header -->
+
+  <!-- ════ Header ════ -->
   <header class="topbar">
     <div class="container row">
       <div class="logo">QuangHuy</div>
 
-      <nav class="nav">
-        <a href="#about">Giới thiệu</a>
-        <a href="#projects">Dự án</a>
-        <a href="#contact">Liên hệ</a>
+      <button class="hamburger" id="menuBtn" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="#projects" data-i18n="nav.projects">Dự án</a>
+        <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
       </nav>
 
-      <button class="btn" id="themeBtn" type="button">Giao Diện ☀️</button>
+      <div class="header-actions">
+        <!-- Language pill toggle -->
+        <div class="lang-toggle" id="langToggle">
+          <button class="active" data-lang="vi">VIE</button>
+          <button data-lang="en">ENG</button>
+        </div>
+        <!-- Theme pill toggle -->
+        <div class="theme-toggle" id="themeToggle">
+          <button class="active" id="themeDark" title="Dark mode">🌙</button>
+          <button id="themeLight" title="Light mode">☀️</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-<main class="container">
-  <section class="hero">
+  <!-- ════ Main Content ════ -->
+  <main class="container">
 
-    <!-- Cột trái: text -->
-    <div>
-      
-      <h1>Mình là <span class="accent">Quang Huy</span></h1>
-      <p class="sub">
-        Đây là website portfolio của mình, cảm ơn các bạn đã ghé thăm. <br>
-        Chúc các bạn một ngày tốt lành!
-      </p>
-      <h2>Giới thiệu</h2> 
-<ul>
-  <li>Kỹ Sư Thiết Kế Kết Cấu tại công ty TTAD.</li>
-  <li>Học viên cao học trường Đại Học Kiến Trúc Thành Phố Hồ Chí Minh.</li>
-  <li>Code được ngôn ngữ lập trình Visual basic, HTML, Matlab,...</li>
-  <li>Mobile/Zalo: 083.442.8402</li>
-  <li>Email: Dinhngocquanghuy99@gmail.com</li>
-  <li>Facebook: Quang Huy</li>
-  <li>Mọi chi tiết xin liên hệ thông tin trên.Xin cảm ơn!</li>
- 
-</ul>
+    <!-- ─── Hero ─── -->
+    <section class="hero" id="about">
+      <div>
+        <span class="hero-label" data-i18n="hero.label">KỸ SƯ THIẾT KẾ KẾT CẤU</span>
 
+        <h1>
+          <span data-i18n="hero.greeting">Xin chào, mình là</span><br>
+          <span class="accent" data-i18n="hero.name">Quang Huy</span>
+        </h1>
 
-    </div>
+        <p class="sub" data-i18n="hero.sub">
+          Đây là website portfolio của mình, cảm ơn các bạn đã ghé thăm.
+          Chúc các bạn một ngày tốt lành!
+        </p>
 
+        <!-- About Info -->
+        <ul class="about-list">
+          <li><span class="icon">💼</span> <span data-i18n="about.career">Kỹ Sư Thiết Kế Kết Cấu tại công ty
+              TTAD.</span></li>
+          <li><span class="icon">🎓</span> <span data-i18n="about.degree">Tốt nghiệp Kỹ Sư Xây Dựng trường Đại Học Kiến
+              Trúc TP.HCM.</span></li>
+          <li><span class="icon">🎓</span> <span data-i18n="about.graduate">Học viên cao học trường Đại Học Kiến Trúc
+              TP.HCM.</span></li>
+          <li><span class="icon">🌐</span> <span data-i18n="about.english">Ngoại ngữ: Tiếng Anh TOEIC 550.</span></li>
+          <li><span class="icon">💻</span> <span data-i18n="about.skills">Code được Visual Basic, HTML,
+              Matlab,...</span></li>
+        </ul>
 
-    <!-- Cột phải: ảnh -->
-    <div class="heroImage">
-      <img src="images/QuangHuy.JPG" alt="Quang Huy" class="avatar" />
-    </div>
+        <!-- Skill Tags -->
+        <span class="section-label">Tools</span>
+        <div class="skill-tags">
+          <span class="skill-tag">VBA</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">ETABS</span>
+          <span class="skill-tag">SAFE</span>
+          <span class="skill-tag">SAP2000</span>
+          <span class="skill-tag">AutoCAD</span>
+          <span class="skill-tag">Excel API</span>
+        </div>
 
-  </section>
-
-
-  
-
-    <!-- Projects (Featured) -->
-<section id="projects" class="section">
-  <div class="sectionHeader">
-    <h2>Dự án tiêu điểm</h2>
-    <a class="btn ghost" href="projects.html">Xem tất cả dự án →</a>
-  </div>
-
-  <div class="grid">
-    <article class="project">
-      <h3>Uỷ Ban Nhân Dân Thành Phố Hồ Chí Minh</h3>
-      <img src="images/UBND.jpg" alt="UBND HCM" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
+        <!-- Actions -->
+        <div class="heroActions">
+          <a class="btn primary" href="#contact" data-i18n="hero.contact_btn">Liên hệ mình</a>
+          <a class="btn" href="projects.html" data-i18n="hero.projects_btn">Xem dự án →</a>
+        </div>
       </div>
-    </article>
 
-    <article class="project">
-      <h3>Chung cư An Phú Tây - An Quý Tây Huyện Bình Chánh TP.HCM</h3>
-      <img src="images/APT.png" alt="APT" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
+      <!-- Avatar -->
+      <div class="heroImage">
+        <div class="avatar-wrapper">
+          <img src="images/QuangHuy.JPG" alt="Quang Huy" class="avatar" />
+        </div>
       </div>
-    </article>
+    </section>
 
-    <article class="project">
-      <h3>Đánh Giá Rủi Ro Chuỗi Cửa Hàng Tiện Lợi Circle-K</h3>
-      <img src="images/CircleK.jpg" alt="Circle K" class="project-image" />
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
+    <hr class="section-divider">
+
+    <!-- ─── Featured Projects ─── -->
+    <section id="projects" class="section reveal">
+      <span class="section-label" data-i18n="projects.label">PORTFOLIO</span>
+      <div class="sectionHeader">
+        <h2 data-i18n="projects.featured">Dự án tiêu điểm</h2>
+        <a class="btn" href="projects.html" data-i18n="projects.view_all">Xem tất cả dự án →</a>
       </div>
-    </article>
-  </div>
-</section>
 
- <!-- Software (Featured) -->
-<section id="Software" class="section">
-  <div class="sectionHeader">
-    <h2>Phần mềm tính toán</h2>
+      <div class="grid">
+        <article class="project" style="--i:0">
+          <div class="project-img-wrap">
+            <img src="images/UBND.jpg" alt="UBND HCM" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-cong-trinh" data-i18n="tag.cong_trinh">Công trình</span>
+            <h3 data-i18n="project.ubnd">Uỷ Ban Nhân Dân Thành Phố Hồ Chí Minh</h3>
+            <a class="link" href="projects/ubnd.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
 
-  </div>
+        <article class="project" style="--i:1">
+          <div class="project-img-wrap">
+            <img src="images/APT.png" alt="APT" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-chung-cu" data-i18n="tag.chung_cu">Chung cư</span>
+            <h3 data-i18n="project.apt">Chung cư An Phú Tây — An Quý Tây, Huyện Bình Chánh, TP.HCM</h3>
+            <a class="link" href="projects/apt.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
 
-  <div class="grid">
-    <article class="project">
-      <h3>QH Tools (Excel Add-in)</h3>
-       <img src="images/QHTools.png" alt="QH-Tools" class="project-image" />
-      <p>Phần mềm được mình tự phát triển hỗ trợ tính toán kết cấu tự động cập nhật số liệu đồng bộ với etabs/safe/sap2000 bằng api.....</p>
-      <div class="row gap">
-        <a class="link" href="#" target="_blank" rel="noreferrer">Xem chi tiết</a>
+        <article class="project" style="--i:2">
+          <div class="project-img-wrap">
+            <img src="images/CircleK.jpg" alt="Circle K" class="project-image" />
+          </div>
+          <div class="project-body">
+            <span class="project-tag tag-kiem-dinh" data-i18n="tag.kiem_dinh">Kiểm định</span>
+            <h3 data-i18n="project.circlek">Đánh Giá Rủi Ro Chuỗi Cửa Hàng Tiện Lợi Circle-K</h3>
+            <a class="link" href="projects/circlek.html" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
       </div>
-    </article>
-   
-  </div>
-</section>
+    </section>
 
+    <hr class="section-divider">
 
-  <!-- Contact -->
-<section id="contact" class="section">
-  <h2>Liên hệ</h2>
-  <p>Bạn có thể để email/FB/LinkedIn ở đây:</p>
-</section>
+    <!-- ─── Software ─── -->
+    <section id="software" class="section reveal">
+      <span class="section-label" data-i18n="software.label">SOFTWARE</span>
+      <div class="sectionHeader">
+        <h2 data-i18n="software.title">Phần mềm tính toán</h2>
+      </div>
 
-</main>
+      <div class="grid">
+        <article class="project" style="--i:0">
+          <div class="project-img-wrap">
+            <img src="images/QHTools.png" alt="QH-Tools" class="project-image" />
+          </div>
+          <div class="project-body">
+            <h3 data-i18n="software.qhtools">QH Tools (Excel Add-in)</h3>
+            <p data-i18n="software.qhtools_desc">Phần mềm được mình tự phát triển hỗ trợ tính toán kết cấu tự động cập
+              nhật số liệu đồng bộ với ETABS/SAFE/SAP2000 bằng API.....</p>
+            <a class="link" href="#" data-i18n="projects.detail">Xem chi tiết</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<script>
-  const themeBtn = document.getElementById("themeBtn");
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
+    <hr class="section-divider">
+
+    <!-- ─── Contact ─── -->
+    <section id="contact" class="section reveal">
+      <span class="section-label" data-i18n="contact.label">CONTACT</span>
+      <h2 data-i18n="contact.title">Liên hệ</h2>
+      <p class="sub" data-i18n="contact.sub">Kết nối với mình qua các kênh bên dưới</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="tel:0834428402">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info">
+            <span class="contact-label" data-i18n="contact.zalo">Zalo</span>
+            <span class="contact-value" data-i18n="contact.zalo_val">083.442.8402</span>
+          </div>
+        </a>
+
+        <a class="contact-card" href="mailto:Dinhngocquanghuy99@gmail.com">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <span class="contact-label" data-i18n="contact.email">Email</span>
+            <span class="contact-value" data-i18n="contact.email_val">Dinhngocquanghuy99@gmail.com</span>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://www.facebook.com/win.win.2908/" target="_blank" rel="noreferrer">
+          <div class="contact-icon">👤</div>
+          <div class="contact-info">
+            <span class="contact-label" data-i18n="contact.fb">Facebook</span>
+            <span class="contact-value" data-i18n="contact.fb_val">Quang Huy</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © <span id="year"></span> <span data-i18n="footer.copy">Quang Huy — Thiết kế với ❤️</span>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="lang.js"></script>
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ─── Theme toggle (pill style) ───
+    const themeDark = document.getElementById("themeDark");
+    const themeLight = document.getElementById("themeLight");
+
+    function setTheme(mode) {
+      if (mode === "light") {
+        document.body.classList.add("light");
+        themeLight.classList.add("active");
+        themeDark.classList.remove("active");
+      } else {
+        document.body.classList.remove("light");
+        themeDark.classList.add("active");
+        themeLight.classList.remove("active");
+      }
+      localStorage.setItem("portfolio-theme", mode);
+    }
+
+    // Init theme
+    const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+    setTheme(savedTheme);
+
+    themeDark.addEventListener("click", () => setTheme("dark"));
+    themeLight.addEventListener("click", () => setTheme("light"));
+
+    // ─── Language toggle (pill style) ───
+    const langToggle = document.getElementById("langToggle");
+    const langBtns = langToggle.querySelectorAll("button");
+
+    langBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang");
+        langBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyLanguage(lang);
+      });
     });
-  }
-</script>
 
+    // Init language on load — sync pill toggle state
+    document.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("portfolio-lang") || "vi";
+      langBtns.forEach(b => {
+        b.classList.toggle("active", b.getAttribute("data-lang") === saved);
+      });
+    });
+
+    // Mobile hamburger
+    const menuBtn = document.getElementById("menuBtn");
+    const mainNav = document.getElementById("mainNav");
+    menuBtn.addEventListener("click", () => {
+      mainNav.classList.toggle("open");
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObserver.observe(el));
+  </script>
 </body>
+
 </html>
