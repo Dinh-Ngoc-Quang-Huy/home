@@ -6,6 +6,7 @@ const translations = {
   // ─── Navigation ───
   "nav.about":     { vi: "Giới thiệu",  en: "About" },
   "nav.projects":  { vi: "Dự án",       en: "Projects" },
+  "nav.software":  { vi: "Phần mềm",    en: "Software" },
   "nav.contact":   { vi: "Liên hệ",     en: "Contact" },
   "nav.back":      { vi: "← Về trang chủ", en: "← Back to Home" },
 
@@ -15,6 +16,8 @@ const translations = {
   "hero.name":     { vi: "Quang Huy",   en: "Quang Huy" },
   "hero.sub":      { vi: "Đây là website portfolio của mình, cảm ơn các bạn đã ghé thăm. Chúc các bạn một ngày tốt lành!", 
                      en: "Welcome to my portfolio website. Thank you for visiting. Have a great day!" },
+  "hero.intro":    { vi: "Tôi là kỹ sư thiết kế kết cấu với 3 năm kinh nghiệm trong ngành. Công việc chuyên sâu của tôi là xây dựng mô hình tính toán trên Etabs, Safe và Sap2000, kết hợp triển khai mô hình thông tin bằng Autodesk AutoCAD và Revit. Tôi cũng tham gia rà soát mô hình và phối hợp đa bộ môn để xử lý xung đột (clash detection). Bên cạnh đó, tôi trực tiếp thực hiện tính toán kiểm tra khả năng chịu lực, triển khai bản vẽ chi tiết và bóc tách khối lượng, đảm bảo tính đồng bộ trong suốt quá trình thực hiện dự án.",
+                     en: "I am a structural design engineer with 3 years of industry experience. My core work involves building calculation models on Etabs, Safe, and Sap2000, combined with deploying information models using Autodesk AutoCAD and Revit. I also participate in model review and multidisciplinary coordination for clash detection. Furthermore, I directly perform load-bearing capacity calculations, detail drawing deployment, and quantity surveying, ensuring consistency throughout project execution." },
   "hero.contact_btn": { vi: "Liên hệ mình", en: "Contact Me" },
   "hero.projects_btn": { vi: "Xem dự án →", en: "View Projects →" },
 
@@ -29,6 +32,17 @@ const translations = {
                         en: "Language: English — TOEIC 550." },
   "about.skills":     { vi: "Code được Visual Basic, HTML, Matlab,...",
                         en: "Proficient in Visual Basic, HTML, Matlab,..." },
+  "about.tools":      { vi: "Phần mềm ứng dụng và ngôn ngữ lập trình",
+                        en: "Application Software and Programming Languages" },
+  "about.achievements": { vi: "Thành tựu bản thân",
+                          en: "Personal Achievements" },
+  "achievements.article1": { vi: "📰 Tối ưu hóa nhà dân dụng kết cấu thép bằng SAP2000-OAPI và thuật toán tiến hóa", 
+                             en: "📰 Optimizing steel-framed residential buildings using SAP2000-OAPI and evolutionary algorithms" },
+  "achievements.article2": { vi: "📰 Tập đoàn Nam Long trao học bổng thường niên “Swing For Dreams” 2020", 
+                             en: "📰 Nam Long Group awards 'Swing For Dreams' 2020 annual scholarships" },
+  "achievements.article3": { vi: "📰 Vượt khó khăn, những bạn trẻ Gen Z ấp ủ ước mơ lớn cho cộng đồng", 
+                             en: "📰 Overcoming difficulties, Gen Z youth nurture big dreams for the community" },
+  "skills.label":     { vi: "SKILLS",                  en: "SKILLS" },
   "about.phone":      { vi: "Mobile/Zalo: 083.442.8402",
                         en: "Mobile/Zalo: 083.442.8402" },
   "about.email":      { vi: "Email: Dinhngocquanghuy99@gmail.com",
@@ -92,8 +106,8 @@ const translations = {
   "contact.fb_val":     { vi: "Quang Huy", en: "Quang Huy" },
 
   // ─── Footer ───
-  "footer.copy":        { vi: "Quang Huy — Thiết kế với ❤️",
-                          en: "Quang Huy — Built with ❤️" },
+  "footer.copy":        { vi: "Đinh Ngọc Quang Huy",
+                          en: "Đinh Ngọc Quang Huy" },
 
   // ─── Projects Page ───
   "projects.page_title":   { vi: "Tất cả dự án",  en: "All Projects" },
@@ -118,6 +132,41 @@ const translations = {
   "tag.kiem_dinh":   { vi: "Kiểm định",    en: "Inspection" },
   "tag.khu_dan_cu":  { vi: "Khu dân cư",   en: "Residential" },
   "tag.du_lich":     { vi: "Du lịch",       en: "Tourism" },
+
+  // ─── Project General ───
+  "proj.detail":         { vi: "CHI TIẾT DỰ ÁN", en: "PROJECT DETAILS" },
+  "proj.back":           { vi: "← Về danh sách", en: "← Back to Projects" },
+  "proj.back_portfolio": { vi: "← Quay lại Portfolio", en: "← Back to Portfolio" },
+  "proj.location":       { vi: "ĐỊA ĐIỂM", en: "LOCATION" },
+  "proj.role":           { vi: "VAI TRÒ", en: "ROLE" },
+  "proj.task_type":      { vi: "LOẠI CÔNG VIỆC", en: "SCOPE OF WORK" },
+  "proj.gallery":        { vi: "THƯ VIỆN HÌNH ẢNH", en: "IMAGE GALLERY" },
+  "proj.key_points":     { vi: "Điểm chính", en: "Key Points" },
+  "proj.tools":          { vi: "Công cụ", en: "Tools" },
+  "loc.hcm":             { vi: "Thành Phố Hồ Chí Minh", en: "Ho Chi Minh City" },
+
+  // ─── Project: APT ───
+  "apt.page_title": { vi: "Chung cư An Phú Tây | Quang Huy", en: "An Phu Tay Apartment | Quang Huy" },
+  "apt.title":      { vi: "Chung cư An Phú Tây — An Quý Tây, Huyện Bình Chánh, TP.HCM", en: "An Phu Tay Apartment — An Quy Tay, Binh Chanh District, HCMC" },
+  "apt.desc":       { vi: "Dự án xin giấy phép sửa đổi và quy hoạch 1/2000 quy hoạch 1/500 của chung cư An Phú Tây — An Quý Tây, Huyện Bình Chánh, TP.HCM.", en: "Project for modify license and 1/2000, 1/500 master plan of An Phu Tay Apartment — An Quy Tay, Binh Chanh District, HCMC." },
+  "apt.role":       { vi: "Kỹ Sư Quản Lý Dự Án", en: "Project Management Engineer" },
+  "apt.task_type":  { vi: "Chuẩn bị và hoàn thiện hồ sơ xin chuyển đổi quy hoạch 1/2000 và 1/500. Tính chỉ tiêu quy hoạch và hệ số diện tích sử dụng, diện tích công năng và phân bổ của toàn dự án. Phối hợp với trưởng phòng tính toán tổng mức đầu tư và hiệu quả dự án.", en: "Prepare and complete documents for changing 1/2000 and 1/500 planning. Calculate planning indicators, land use coefficients, functional areas, and distribution of the entire project. Coordinate with the department head to calculate total investment and project efficiency." },
+  "apt.point1":     { vi: "Công trình quan trọng với quy mô lớn.", en: "Important project with large scale." },
+  "apt.point2":     { vi: "Công trình cấp 2.", en: "Grade 2 construction." },
+  "apt.point3":     { vi: "Áp dụng theo đúng QC02 QC04 QC06.", en: "Strictly apply to QC02, QC04, QC06 standards." },
+  "apt.point4":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: Circle K ───
+  "circlek.page_title": { vi: "Circle-K | Quang Huy", en: "Circle-K | Quang Huy" },
+  "circlek.title":      { vi: "Đánh Giá Rủi Ro Chuỗi Cửa Hàng Tiện Lợi Circle-K", en: "Risk Assessment for Circle-K Convenience Store Chain" },
+  "circlek.desc":       { vi: "Dự án kiểm định và thiết kế kết cấu Kiểm định Đánh Giá Rủi Ro Chuỗi Cửa Hàng Tiện Lợi Circle-K. Đây là một trong những Kiểm định trọng điểm đối với bản thân mình khi trực tiếp khảo sát hơn 100 cửa hàng Circle khắp cả nước.", en: "Structural inspection and design project for Risk Assessment of the Circle-K convenience store chain. This is one of the key inspections for me personally as I directly surveyed over 100 Circle-K stores nationwide." },
+  "circlek.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "circlek.task_type":  { vi: "Khảo sát hiện trạng, kiểm tra và xác định kết cấu chịu lực chính của công trình. Đưa ra đánh giá sơ bộ để có thể tạm thời ứng phó xem công trình nên sử dụng tiếp hoặc tạm ngưng một vài khu vực tại thời điểm kiểm tra. Vẽ lại bản vẽ hiện trạng, đánh giá kết cấu công trình ổn định để sử dụng ở trạng thái và mức độ nào.", en: "Survey current conditions, test, and determine the main load-bearing structure. Provide preliminary assessments to temporarily respond to whether the building should continue to be used or temporarily suspend some areas at the time of inspection. Redraw as-built drawings, evaluate structural stability to use at what state and degree." },
+  "circlek.point1":     { vi: "Công trình trọng điểm với quy mô khắp cả nước.", en: "Key project on a nationwide scale." },
+  "circlek.point2":     { vi: "Công trình cấp 4 quy mô nhỏ.", en: "Grade 4 small-scale structure." },
+  "circlek.point3":     { vi: "Trải rộng khắp khu vực lớn của cả nước.", en: "Spread across large areas nationwide." },
+  "circlek.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN, ASCE.", en: "Calculate and test structures according to TCVN, ASCE." },
+  "circlek.point5":     { vi: "Phối hợp với đội thi công để đề xuất phương án gia cường sửa chữa, cải tạo.", en: "Coordinate with the construction team to propose repair and renovation reinforcement plans." },
 };
 
 // ─── Apply translations ───

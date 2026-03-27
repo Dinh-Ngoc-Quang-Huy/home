@@ -29,6 +29,7 @@
       <nav class="nav" id="mainNav">
         <a href="#about" data-i18n="nav.about">Giới thiệu</a>
         <a href="#projects" data-i18n="nav.projects">Dự án</a>
+        <a href="#software" data-i18n="nav.software">Phần mềm</a>
         <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
       </nav>
 
@@ -60,11 +61,6 @@
           <span class="accent" data-i18n="hero.name">Quang Huy</span>
         </h1>
 
-        <p class="sub" data-i18n="hero.sub">
-          Đây là website portfolio của mình, cảm ơn các bạn đã ghé thăm.
-          Chúc các bạn một ngày tốt lành!
-        </p>
-
         <!-- About Info -->
         <ul class="about-list">
           <li><span class="icon">💼</span> <span data-i18n="about.career">Kỹ Sư Thiết Kế Kết Cấu tại công ty
@@ -78,17 +74,25 @@
               Matlab,...</span></li>
         </ul>
 
-        <!-- Skill Tags -->
-        <span class="section-label">Tools</span>
-        <div class="skill-tags">
-          <span class="skill-tag">VBA</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">MATLAB</span>
-          <span class="skill-tag">ETABS</span>
-          <span class="skill-tag">SAFE</span>
-          <span class="skill-tag">SAP2000</span>
-          <span class="skill-tag">AutoCAD</span>
-          <span class="skill-tag">Excel API</span>
+        <div style="padding: 24px; background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius-lg); margin-bottom: 40px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <!-- Decorative glow -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, var(--accent) 0%, transparent 20%); opacity: 0.08; pointer-events: none;"></div>
+          <!-- Quote icon -->
+          <div style="font-size: 32px; color: var(--accent); opacity: 0.3; line-height: 1; margin-bottom: -16px; font-family: serif;">"</div>
+          <p data-i18n="hero.intro" style="margin: 0; font-size: 14.5px; text-align: justify; line-height: 1.8; color: var(--text-secondary); position: relative; z-index: 1;">
+            Tôi là kỹ sư thiết kế kết cấu với 3 năm kinh nghiệm trong ngành. Công việc chuyên sâu của tôi là xây dựng mô hình tính toán trên Etabs, Safe và Sap2000, kết hợp triển khai mô hình thông tin bằng Autodesk AutoCAD và Revit. Tôi cũng tham gia rà soát mô hình và phối hợp đa bộ môn để xử lý xung đột (clash detection). Bên cạnh đó, tôi trực tiếp thực hiện tính toán kiểm tra khả năng chịu lực, triển khai bản vẽ chi tiết và bóc tách khối lượng, đảm bảo tính đồng bộ trong suốt quá trình thực hiện dự án.
+          </p>
+        </div>
+
+        <!-- Achievements -->
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <span class="section-label" style="font-size: 13px; letter-spacing: 1.5px; color: var(--accent); margin: 0;" data-i18n="about.achievements">Thành tựu bản thân</span>
+          <div style="flex: 1; height: 1px; background: var(--border);"></div>
+        </div>
+        <div class="skill-tags" id="achievementsList" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+          <a href="https://tapchixaydung.vn/toi-uu-hoa-nha-dan-dung-ket-cau-thep-bang-sap2000-oapi-va-thuat-toan-tien-hoa-20201224000036092.html" target="_blank" rel="noopener noreferrer" class="skill-tag" style="text-decoration: none; white-space: normal; text-align: left; line-height: 1.5; padding: 10px 16px;" data-i18n="achievements.article1">📰 Tối ưu hóa nhà dân dụng kết cấu thép bằng SAP2000-OAPI và thuật toán tiến hóa</a>
+          <a href="https://www.namlongvn.com/tin-tuc/3137-tap-doan-nam-long-trao-hoc-bong-thuong-nien-swing-for-dreams-2020/" target="_blank" rel="noopener noreferrer" class="skill-tag" style="text-decoration: none; white-space: normal; text-align: left; line-height: 1.5; padding: 10px 16px;" data-i18n="achievements.article2">📰 Tập đoàn Nam Long trao học bổng thường niên “Swing For Dreams” 2020</a>
+          <a href="https://www.namlongvn.com/tin-tuc/3153-vuot-kho-khan-nhung-ban-tre-gen-z-ap-u-uoc-mo-lon-cho-cong-dong/" target="_blank" rel="noopener noreferrer" class="skill-tag" style="text-decoration: none; white-space: normal; text-align: left; line-height: 1.5; padding: 10px 16px;" data-i18n="achievements.article3">📰 Vượt khó khăn, những bạn trẻ Gen Z ấp ủ ước mơ lớn cho cộng đồng</a>
         </div>
 
         <!-- Actions -->
@@ -103,6 +107,33 @@
         <div class="avatar-wrapper">
           <img src="images/QuangHuy.JPG" alt="Quang Huy" class="avatar" />
         </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ─── Skills / Languages ─── -->
+    <section id="skills" class="section reveal">
+      <span class="section-label" data-i18n="skills.label">SKILLS</span>
+      <div class="sectionHeader">
+        <h2 data-i18n="about.tools">Phần mềm ứng dụng và ngôn ngữ lập trình</h2>
+      </div>
+      
+      <div class="skill-tags" style="gap: 16px;">
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">ETABS</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">SAFE</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">SAP2000</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">AutoCAD</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">Revit</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">DCE</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">KataPro</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">KetcauSoft</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">Excel</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">VBA</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">VB.NET</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">Excel API</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">MATLAB</span>
+        <span class="skill-tag" style="font-size: 14px; padding: 10px 20px;">HTML/CSS</span>
       </div>
     </section>
 
@@ -213,7 +244,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      © <span id="year"></span> <span data-i18n="footer.copy">Quang Huy — Thiết kế với ❤️</span>
+      © <span id="year"></span> <span data-i18n="footer.copy">Đinh Ngọc Quang Huy</span>
     </footer>
   </main>
 
