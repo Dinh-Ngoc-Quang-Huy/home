@@ -119,6 +119,9 @@ const translations = {
   // ─── Filter Tags ───
   "filter.all":          { vi: "Tất cả",        en: "All" },
   "filter.kiem_dinh":    { vi: "Kiểm định",     en: "Inspection" },
+  "filter.tham_tra":     { vi: "Thẩm tra",      en: "Verification" },
+  "filter.thiet_ke":     { vi: "Thiết kế",      en: "Design" },
+  "filter.quan_ly":      { vi: "Quản lý dự án", en: "Project Management" },
   "filter.chung_cu":     { vi: "Chung cư",      en: "Apartment" },
   "filter.khu_dan_cu":   { vi: "Khu dân cư",    en: "Residential" },
   "filter.cong_trinh":   { vi: "Công trình",    en: "Construction" },
@@ -126,6 +129,9 @@ const translations = {
   "filter.du_lich":      { vi: "Du lịch",        en: "Tourism" },
 
   // ─── Tag Labels ───
+  "tag.tham_tra":    { vi: "Thẩm tra",     en: "Verification" },
+  "tag.thiet_ke":    { vi: "Thiết kế",     en: "Design" },
+  "tag.quan_ly":     { vi: "Quản lý dự án", en: "Project Management" },
   "tag.cong_trinh":  { vi: "Công trình",   en: "Construction" },
   "tag.chung_cu":    { vi: "Chung cư",     en: "Apartment" },
   "tag.danh_gia":    { vi: "Đánh giá",     en: "Assessment" },
@@ -144,6 +150,23 @@ const translations = {
   "proj.key_points":     { vi: "Điểm chính", en: "Key Points" },
   "proj.tools":          { vi: "Công cụ", en: "Tools" },
   "loc.hcm":             { vi: "Thành Phố Hồ Chí Minh", en: "Ho Chi Minh City" },
+  "loc.hue":             { vi: "Thừa Thiên Huế", en: "Thua Thien Hue" },
+  "loc.hcm_binhtan":     { vi: "Bình Tân, Tp.Hồ Chí Minh", en: "Binh Tan, HCMC" },
+  "loc.hcm_cnc":         { vi: "Khu công nghệ cao, Tp.Hồ Chí Minh", en: "Hi-Tech Park, HCMC" },
+  "loc.dongthap":        { vi: "Sa Đéc, Tỉnh Đồng Tháp", en: "Sa Dec, Dong Thap" },
+  "loc.dongnai_cattien": { vi: "Nam Cát Tiên, Tỉnh Đồng Nai", en: "Nam Cat Tien, Dong Nai" },
+  "loc.binhdinh_quynhon":{ vi: "TP.Quy Nhơn, Tỉnh Bình Định", en: "Quy Nhon, Binh Dinh" },
+  "loc.binhduong_dian":  { vi: "Dĩ An, Tỉnh Bình Dương", en: "Di An, Binh Duong" },
+  "loc.hcm_q7":          { vi: "Quận 7, TP.Hồ Chí Minh", en: "District 7, HCMC" },
+  "project.sholi":       { vi: "The Sholi", en: "The Sholi" },
+  "project.orista":      { vi: "Dự án Orista Corp Hồ Chí Minh", en: "Orista Corp HCMC Project" },
+  "project.phapson":     { vi: "Thiền Viện Pháp Sơn", en: "Phap Son Zen Monastery" },
+  "project.kyco":        { vi: "Khu Du Lịch Kỳ Co – Nhơn Lý", en: "Ky Co - Nhon Ly Tourist Area" },
+  "project.tanbinh":     { vi: "Chung cư Tân Bình", en: "Tan Binh Apartment" },
+  "project.nguyenhuutho":{ vi: "Trường Học Nguyễn Hữu Thọ", en: "Nguyen Huu Tho School" },
+  "project.tranquoctoan":{ vi: "Trường Học Trần Quốc Toản", en: "Tran Quoc Toan School" },
+  "project.binhthuan":   { vi: "Trường Học Bình Thuận", en: "Binh Thuan School" },
+  "project.triumph":     { vi: "Kiểm Định Nhà Xưởng Công Ty Triumph", en: "Triumph Factory Inspection" },
 
   // ─── Project: APT ───
   "apt.page_title": { vi: "Chung cư An Phú Tây | Quang Huy", en: "An Phu Tay Apartment | Quang Huy" },
@@ -167,6 +190,170 @@ const translations = {
   "circlek.point3":     { vi: "Trải rộng khắp khu vực lớn của cả nước.", en: "Spread across large areas nationwide." },
   "circlek.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN, ASCE.", en: "Calculate and test structures according to TCVN, ASCE." },
   "circlek.point5":     { vi: "Phối hợp với đội thi công để đề xuất phương án gia cường sửa chữa, cải tạo.", en: "Coordinate with the construction team to propose repair and renovation reinforcement plans." },
+
+  // ─── Project: K-Town ───
+  "ktown.page_title": { vi: "Chung cư The K-Town | Quang Huy", en: "The K-Town Apartment | Quang Huy" },
+  "ktown.title":      { vi: "Chung cư The K-Town, Huyện Nhà Bè, TP.HCM", en: "The K-Town Apartment, Nha Be District, HCMC" },
+  "ktown.desc":       { vi: "Dự án xin giấy phép sửa đổi và quy hoạch 1/2000 quy hoạch 1/500 của chung cư The K-Town, Huyện Nhà Bè, TP.HCM.", en: "Project for modify license and 1/2000, 1/500 master plan of The K-Town Apartment, Nha Be District, HCMC." },
+  "ktown.role":       { vi: "Kỹ Sư Quản Lý Dự Án", en: "Project Management Engineer" },
+  "ktown.task_type":  { vi: "Chuẩn bị và hoàn thiện hồ sơ xin chuyển đổi quy hoạch 1/2000 và 1/500. Tính chỉ tiêu quy hoạch và hệ số diện tích sử dụng, diện tích công năng và phân bổ của toàn dự án. Phối hợp với trưởng phòng tính toán tổng mức đầu tư và hiệu quả dự án.", en: "Prepare and complete documents for changing 1/2000 and 1/500 planning. Calculate planning indicators, land use coefficients, functional areas, and distribution of the entire project. Coordinate with the department head to calculate total investment and project efficiency." },
+  "ktown.point1":     { vi: "Công trình quan trọng với quy mô lớn.", en: "Important project with large scale." },
+  "ktown.point2":     { vi: "Công trình cấp 2.", en: "Grade 2 construction." },
+  "ktown.point3":     { vi: "Áp dụng theo đúng QC02, QC04, QC06.", en: "Strictly apply to QC02, QC04, QC06 standards." },
+  "ktown.point4":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: Phuoc Thinh ───
+  "phuocthinh.page_title": { vi: "Phước Thịnh | Quang Huy", en: "Phuoc Thinh | Quang Huy" },
+  "phuocthinh.title":      { vi: "Khu Dân Cư Phước Thịnh, Quận 12, TP.HCM", en: "Phuoc Thinh Residential Area, District 12, HCMC" },
+  "phuocthinh.desc":       { vi: "Dự án xin giấy phép sửa đổi và quy hoạch 1/2000 quy hoạch 1/500 của chung cư Khu Dân Cư Phước Thịnh, Quận 12, TP.HCM.", en: "Project for modify license and 1/2000, 1/500 master plan of Phuoc Thinh Residential Area, District 12, HCMC." },
+  "phuocthinh.role":       { vi: "Kỹ Sư Quản Lý Dự Án", en: "Project Management Engineer" },
+  "phuocthinh.task_type":  { vi: "Chuẩn bị và hoàn thiện hồ sơ xin chuyển đổi quy hoạch 1/2000 và 1/500. Tính chỉ tiêu quy hoạch và hệ số diện tích sử dụng, diện tích công năng và phân bổ của toàn dự án. Phối hợp với trưởng phòng tính toán tổng mức đầu tư và hiệu quả dự án.", en: "Prepare and complete documents for changing 1/2000 and 1/500 planning. Calculate planning indicators, land use coefficients, functional areas, and distribution of the entire project. Coordinate with the department head to calculate total investment and project efficiency." },
+  "phuocthinh.point1":     { vi: "Công trình quan trọng với quy mô lớn.", en: "Important project with large scale." },
+  "phuocthinh.point2":     { vi: "Công trình cấp 2.", en: "Grade 2 construction." },
+  "phuocthinh.point3":     { vi: "Áp dụng theo đúng QC02, QC04, QC06.", en: "Strictly apply to QC02, QC04, QC06 standards." },
+  "phuocthinh.point4":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: THE SHOLI ───
+  "sholi.page_title": { vi: "The Sholi | Quang Huy", en: "The Sholi | Quang Huy" },
+  "sholi.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình The Sholi.", en: "Structural design verification project for The Sholi." },
+  "sholi.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "sholi.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "sholi.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "sholi.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "sholi.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "sholi.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: ORISTA ───
+  "orista.page_title": { vi: "Dự án Orista Corp Hồ Chí Minh | Quang Huy", en: "Orista Corp HCMC | Quang Huy" },
+  "orista.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Dự án Orista Corp Hồ Chí Minh.", en: "Structural design verification project for Orista Corp HCMC." },
+  "orista.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "orista.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "orista.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "orista.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "orista.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "orista.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: PHAP SON ───
+  "phapson.page_title": { vi: "Thiền Viện Pháp Sơn | Quang Huy", en: "Phap Son Zen Monastery | Quang Huy" },
+  "phapson.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Thiền Viện Pháp Sơn.", en: "Structural design verification project for Phap Son Zen Monastery." },
+  "phapson.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "phapson.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "phapson.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "phapson.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "phapson.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "phapson.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: KY CO ───
+  "kyco.page_title": { vi: "Khu Du Lịch Kỳ Co – Nhơn Lý | Quang Huy", en: "Ky Co - Nhon Ly Tourist Area | Quang Huy" },
+  "kyco.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Khu Du Lịch Kỳ Co – Nhơn Lý.", en: "Structural design verification project for Ky Co - Nhon Ly Tourist Area." },
+  "kyco.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "kyco.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "kyco.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "kyco.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "kyco.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "kyco.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: TAN BINH ───
+  "tanbinh.page_title": { vi: "Chung cư Tân Bình | Quang Huy", en: "Tan Binh Apartment | Quang Huy" },
+  "tanbinh.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Chung cư Tân Bình.", en: "Structural design verification project for Tan Binh Apartment." },
+  "tanbinh.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "tanbinh.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "tanbinh.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "tanbinh.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "tanbinh.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "tanbinh.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: NGUYEN HUU THO ───
+  "nguyenhuutho.page_title": { vi: "Trường Học Nguyễn Hữu Thọ | Quang Huy", en: "Nguyen Huu Tho School | Quang Huy" },
+  "nguyenhuutho.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Trường Học Nguyễn Hữu Thọ.", en: "Structural design verification project for Nguyen Huu Tho School." },
+  "nguyenhuutho.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "nguyenhuutho.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "nguyenhuutho.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "nguyenhuutho.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "nguyenhuutho.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "nguyenhuutho.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: TRAN QUOC TOAN ───
+  "tranquoctoan.page_title": { vi: "Trường Học Trần Quốc Toản | Quang Huy", en: "Tran Quoc Toan School | Quang Huy" },
+  "tranquoctoan.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Trường Học Trần Quốc Toản.", en: "Structural design verification project for Tran Quoc Toan School." },
+  "tranquoctoan.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "tranquoctoan.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "tranquoctoan.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "tranquoctoan.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "tranquoctoan.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "tranquoctoan.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: BINH THUAN ───
+  "binhthuan.page_title": { vi: "Trường Học Bình Thuận | Quang Huy", en: "Binh Thuan School | Quang Huy" },
+  "binhthuan.desc":       { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Trường Học Bình Thuận.", en: "Structural design verification project for Binh Thuan School." },
+  "binhthuan.role":       { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "binhthuan.task_type":  { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and calculation models of the design consultant. Review drawings against other disciplines to check for clashes. Review drawings to ensure adequate conditions, profile components, and compliance with applicable standards and regulations." },
+  "binhthuan.point1":     { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "binhthuan.point2":     { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "binhthuan.point4":     { vi: "Tính toán và kiểm tra kết cấu theo TCVN", en: "Calculate and check structure according to TCVN" },
+  "binhthuan.point5":     { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy", en: "Coordinate with architecture, MEP, and firefighting teams" },
+
+  // ─── Project: MAVIN ───
+  "mavin.page_title": { vi: "Mavin | Quang Huy", en: "Mavin | Quang Huy" },
+  "mavin.desc": { vi: "Dự án kiểm định xilo Mavin ở tỉnh Đồng Tháp.", en: "Mavin silo inspection project in Dong Thap province." },
+  "mavin.role": { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "mavin.task_type": { vi: "Khảo sát hiện trạng, kiểm tra và phối hợp cùng công ty kiểm tra mặt sàn và các cấu kiện chịu lực có dấu hiệu nứt bề mặt. Kiểm tra và đánh giá khả năng chịu lực của kết cấu để đưa ra phương án gia cường sửa chữa tối ưu.", en: "Survey current conditions, checking and coordinating with the company to inspect the floor and load-bearing components showing signs of surface cracking. Inspect and evaluate the load-bearing capacity of the structure to propose optimal repair and reinforcement plans." },
+  "mavin.point1": { vi: "Thiết kế kết cấu công trình trọng điểm của tỉnh Đồng Tháp.", en: "Structural design of the key project in Dong Thap province." },
+  "mavin.point2": { vi: "Công trình có tầm quan trọng đặc biệt vì là kho chứa lớn của tỉnh.", en: "A project of special importance as it is a large warehouse for the province." },
+  "mavin.point3": { vi: "Lấy mẫu nén để nén kiểm tra cường độ và đánh giá.", en: "Take compression samples to test strength and evaluate." },
+  "mavin.point4": { vi: "Tính toán và kiểm tra kết cấu theo TCVN.", en: "Calculate and inspect structure according to TCVN." },
+  "mavin.point5": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: KHO MÁY BAY ───
+  "maybay.page_title": { vi: "Kho Máy Bay TSN | Quang Huy", en: "TSN Aircraft Warehouse | Quang Huy" },
+  "maybay.desc": { vi: "Dự án kiểm định và thiết kế kết cấu Kiểm định Kho Bảo Dưỡng Nội Thất Máy Bay Tân Sơn Nhất. Đây là một trong những dự án khá đặc thù tuy nhiên quy mô vẫn như một nhà xưởng được cải tạo thêm khu văn phòng.", en: "Inspection and structural design project for Tan Son Nhat Aircraft Interior Maintenance Warehouse. This is a rather specific project, although the scale is similar to a factory renovated with an additional office area." },
+  "maybay.role": { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "maybay.task_type": { vi: "Khảo sát hiện trạng, kiểm tra và phối hợp cùng cán bộ kỹ thuật công ty xác định vị trí sửa chữa cải tạo, kiểm tra khả năng chịu lực chính của công trình. Kiểm tra khả năng sử dụng sau khi đã cải tạo, đề xuất phương án cải tạo và sửa chữa tối ưu đảm bảo về mặt kỹ thuật cũng như về mặt mỹ quan.", en: "Survey current conditions, test, and coordinate with technical staff to locate areas for repair and renovation, checking the main load-bearing capacity of the building. Inspect usability after renovation, propose optimal repair and renovation plans ensuring technical and aesthetic requirements." },
+  "maybay.point1": { vi: "Kiểm định kết cấu công trình trọng điểm của sân bay quốc tế Tân Sơn Nhất.", en: "Structural inspection of a key project at Tan Son Nhat International Airport." },
+  "maybay.point2": { vi: "Công trình quy mô nhỏ nhưng tầm quan trọng cao.", en: "Small-scale project but of high importance." },
+  "maybay.point3": { vi: "Tính toán và kiểm tra kết cấu theo TCVN, ASCE.", en: "Calculate and inspect structure according to TCVN, ASCE." },
+  "maybay.point4": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: TDS ───
+  "tds.page_title": { vi: "Tâm Dũng Sơn | Quang Huy", en: "Tam Dung Son | Quang Huy" },
+  "tds.desc": { vi: "Dự án kiểm định và thiết kế kết cấu Kiểm định Mái Nhà Xưởng Lắp Đặt Pin Năng Lượng Mặt Trời. Mục đích là sử dụng tối ưu năng lượng cung cấp cho nhà xưởng. Kiểm tra độ ổn định của công trình.", en: "Inspection and structural design project for Factory Roof Installed with Solar Panels. The purpose is to optimally use the energy supplied to the factory. Inspect the stability of the structure." },
+  "tds.role": { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "tds.task_type": { vi: "Khảo sát hiện trạng, kiểm tra và phối hợp cùng cán bộ kỹ thuật công ty xác định vị trí lắp solar. Lập bản vẽ hiện trạng công trình, kiểm tra khả năng chịu lực chính của công trình. Kiểm tra khả năng sử dụng sau khi đã cải tạo, từ đó cấp giấy chứng nhận sử dụng đạt yêu cầu cho nhà xưởng.", en: "Survey current conditions, test, and coordinate with technical staff to locate the area for installing solar panels. Create current status drawings, check the main load-bearing capacity of the building. Check usability after renovation to issue a satisfactory usage certificate for the factory." },
+  "tds.point1": { vi: "Kiểm định nhà xưởng lắp hệ Solar.", en: "Inspection of factory installing Solar system." },
+  "tds.point2": { vi: "Công trình cấp 2 với quy mô vừa phải.", en: "Grade 2 construction with moderate scale." },
+  "tds.point3": { vi: "Tính toán và kiểm tra kết cấu theo TCVN, ASCE.", en: "Calculate and inspect structure according to TCVN, ASCE." },
+  "tds.point4": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: TRIUMPH ───
+  "triumph.page_title": { vi: "Triumph | Quang Huy", en: "Triumph | Quang Huy" },
+  "triumph.desc": { vi: "Dự án kiểm định Nhà Xưởng Công Ty Triumph Việt Nam. Đây là một trong những Kiểm định nhà xưởng kết hợp khu văn phòng tổ chức vừa quản lý vừa sản xuất hàng loạt.", en: "Inspection project for Triumph Vietnam Factory. This involves inspecting a factory integrated with an office area that manages mass production." },
+  "triumph.role": { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "triumph.task_type": { vi: "Khảo sát hiện trạng, kiểm tra và phối hợp cùng cán bộ kỹ thuật của nhà máy đánh giá tình trạng võng của các kệ sản xuất.", en: "Survey current conditions, test, and coordinate with the factory's technical staff to evaluate the deflection status of production shelves." },
+  "triumph.point1": { vi: "Kiểm định ở lĩnh vực mới.", en: "Inspection in a new area." },
+  "triumph.point2": { vi: "Công trình phụ không có cấp độ.", en: "Auxiliary building with no specific grade." },
+  "triumph.point3": { vi: "Tính toán và kiểm tra kết cấu theo TCVN.", en: "Calculate and inspect structure according to TCVN." },
+  "triumph.point4": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: WENDELBO ───
+  "wendelbo.page_title": { vi: "Wendelbo | Quang Huy", en: "Wendelbo | Quang Huy" },
+  "wendelbo.desc": { vi: "Dự án kiểm định Nhà Xưởng Công Ty Wendelbo Đông Nam Á. Đây là một trong những công trình kiểm định nhà xưởng kết hợp khu văn phòng tổ chức vừa quản lý vừa sản xuất hàng loạt.", en: "Inspection project for Wendelbo Southeast Asia Factory. This involves a factory integrated with an office area managing mass production." },
+  "wendelbo.role": { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "wendelbo.task_type": { vi: "Khảo sát hiện trạng, kiểm tra và phối hợp cùng cán bộ kỹ thuật của nhà máy đánh giá vết nứt bề mặt sàn tầng của khối văn phòng.", en: "Survey current conditions, test, and coordinate with technical staff to evaluate floor surface cracks in the office block." },
+  "wendelbo.point1": { vi: "Kiểm định ở khu vực quan trọng.", en: "Inspection in an important functional area." },
+  "wendelbo.point2": { vi: "Công trình văn phòng kết hợp nhà xưởng.", en: "Office building combined with factory." },
+  "wendelbo.point3": { vi: "Tính toán và kiểm tra kết cấu theo TCVN.", en: "Calculate and inspect structure according to TCVN." },
+  "wendelbo.point4": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architectural, MEP, and firefighting teams." },
+
+  // ─── Project: VY DA ───
+  "vyda.page_title": { vi: "Khu Dịch Vụ Thương Mại ARIYANA Vỹ Dạ | Quang Huy", en: "ARIYANA Vy Da Commercial Service Complex | Quang Huy" },
+  "vyda.desc": { vi: "Dự án thẩm tra thiết kế kết cấu Công trình Khu Dịch Vụ Thương Mại ARIYANA Vỹ Dạ, Huế. Đây là một trong những Công trình khu thương mại dịch vụ mới.", en: "Structural design verification project for ARIYANA Commercial Service Complex in Vy Da, Hue. This is one of the new commercial service facilities." },
+  "vyda.role": { vi: "Kỹ Sư Thiết Kế Kết Cấu", en: "Structural Design Engineer" },
+  "vyda.task_type": { vi: "Thẩm tra kết quả tính toán, mô hình tính toán của đơn vị tư vấn thiết kế. Rà soát kiểm tra bản vẽ đối chiếu với các bộ môn để kiểm tra va chạm. Rà soát kiểm tra bản vẽ đảm bảo đủ điểu kiện, thành phần hồ sơ và đảm bảo theo tiêu chuẩn, quy chuẩn áp dụng.", en: "Verify calculation results and structural models of the design consultant. Review drawings against other disciplines to check for clashes. Evaluate drawings for completeness, document composition, and compliance with applicable standards." },
+  "vyda.point1": { vi: "Thẩm tra kết cấu công trình.", en: "Structural verification of the building." },
+  "vyda.point2": { vi: "Công trình cấp 3 với quy mô rộng.", en: "Grade 3 construction with a large scale." },
+  "vyda.point4": { vi: "Tính toán và kiểm tra kết cấu theo TCVN.", en: "Calculate and check structure according to TCVN." },
+  "vyda.point5": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architecture, MEP, and firefighting teams." },
+
 };
 
 // ─── Apply translations ───
