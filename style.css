@@ -141,8 +141,9 @@ body.light .topbar {
   font-size: 16px;
   letter-spacing: 2px;
   color: var(--text);
-  cursor: default;
+  cursor: pointer;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* Nav */

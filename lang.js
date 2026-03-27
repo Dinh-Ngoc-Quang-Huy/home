@@ -354,6 +354,23 @@ const translations = {
   "vyda.point4": { vi: "Tính toán và kiểm tra kết cấu theo TCVN.", en: "Calculate and check structure according to TCVN." },
   "vyda.point5": { vi: "Phối hợp với đội ngũ kiến trúc và MEP, phòng cháy chữa cháy.", en: "Coordinate with architecture, MEP, and firefighting teams." },
 
+  // ─── Software Details ───
+  "soft.back": { vi: "← Về trang chủ", en: "← Back to Home" },
+  "soft.back_home": { vi: "← Quay lại", en: "← Back" },
+  "soft.detail": { vi: "CHI TIẾT PHẦN MỀM", en: "SOFTWARE DETAILS" },
+  "qhtools.page_title": { vi: "QH-Tools | Quang Huy", en: "QH-Tools | Quang Huy" },
+  "qhtools.title": { vi: "QH-Tools Auto Detail", en: "QH-Tools Auto Detail" },
+  "qhtools.desc": { vi: "QH-Tools là bộ công cụ Excel Add-in hỗ trợ tự động hóa tính toán và cập nhật liên tục tiết diện, nội lực, các phần tử thông qua api cùng nhiều tiện ích khác, giúp tăng tốc độ làm việc đáng kể cho kỹ sư thiết kế.", en: "QH-Tools is an Excel Add-in suite that automates structural calculations and continuously updates cross-sections, internal forces, and elements via API, significantly speeding up the workflow for design engineers." },
+  "qhtools.feat1": { vi: "Thông tin admin hỗ trợ người dùng.", en: "Admin information to support users." },
+  "qhtools.feat2": { vi: "Quản lý license sử dụng phần mềm.", en: "Software license management." },
+  "qhtools.feat3": { vi: "Thông tin update phần mềm.", en: "Software update information." },
+  "qhtools.feat4": { vi: "Kết nối liên tục thông qua API.", en: "Continuous connection via API." },
+  "qhtools.feat5": { vi: "Tạo tiết diện, vật liệu, tổ hợp tải trọng, tổ hợp nội lực tự động.", en: "Auto-create cross-sections, materials, load combinations, and internal force combinations." },
+  "qhtools.feat6": { vi: "Xuất nội lực tiết diện tự động.", en: "Auto-export cross-section internal forces." },
+  "qhtools.feat7": { vi: "Thông tin excel tính toán trực quan đầy đủ.", en: "Comprehensive and intuitive calculation spreadsheet." },
+  "qhtools.feat8": { vi: "Phần mềm vẽ móng cọc tự động hình dạng bất kì.", en: "Auto-draw pile foundations of any shape." },
+  "qhtools.feat9": { vi: "Phần mềm dọn rác từ Etabs/Safe/Sap2000/AutoCAD.", en: "Cleanup tool for Etabs/Safe/Sap2000/AutoCAD." },
+
 };
 
 // ─── Apply translations ───
