@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QH-Tools Hướng Dẫn | Quang Huy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../images/QH_Tools.ico" type="image/x-icon">
+  <style>
+    /* ─── Tutorial Section ─── */
+    .tutorial-section {
+      padding: 48px 0 64px;
+    }
+    .tutorial-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 32px;
+    }
+    @media (max-width: 768px) {
+      .tutorial-columns { grid-template-columns: 1fr; }
+    }
+    .tut-group {
+      margin-bottom: 28px;
+    }
+    .tut-group-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tut-group-title::before {
+      content: '';
+      width: 3px;
+      height: 14px;
+      border-radius: 2px;
+      background: var(--accent);
+      display: inline-block;
+    }
+    .tut-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .tut-list li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      transition: all var(--transition);
+      border: 1px solid transparent;
+    }
+    .tut-list li a:hover {
+      color: var(--accent);
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+      padding-left: 16px;
+    }
+    .tut-list li a::before {
+      content: '▶';
+      font-size: 9px;
+      color: var(--accent);
+      flex-shrink: 0;
+      transition: transform var(--transition);
+    }
+    .tut-list li a:hover::before {
+      transform: scale(1.3);
+    }
+    .yt-badge {
+      margin-left: auto;
+      background: #ff0000;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    /* ─── Contact Section ─── */
+    .tutorial-contact {
+      padding: 48px 0 80px;
+      border-top: 1px solid var(--border);
+    }
+    .contact-grid-tut {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    @media (max-width: 768px) {
+      .contact-grid-tut { grid-template-columns: 1fr; }
+    }
+    .contact-card-tut {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all var(--transition);
+    }
+    .contact-card-tut:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+    .contact-icon-tut { font-size: 24px; }
+    .contact-info-tut {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .contact-label-tut {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+    }
+    .contact-value-tut {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    /* Zalo card with QR */
+    .zalo-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all var(--transition);
+    }
+    .zalo-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+    .zalo-main { display: flex; align-items: center; gap: 16px; flex: 1; }
+    .zalo-qr {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- ════ Header ════ -->
+  <header class="topbar">
+    <div class="container row">
+      <a href="../index.html" class="logo">QuangHuy</a>
+      <button class="hamburger" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="mainNav">
+        <a href="../index.html#about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="../projects.html" data-i18n="nav.projects">Dự án</a>
+        <a href="../index.html#software" data-i18n="nav.software">Phần mềm</a>
+        <a href="#contact-tut" data-i18n="nav.contact">Liên hệ</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" id="langToggle">
+          <button class="active" data-lang="vi">VIE</button>
+          <button data-lang="en">ENG</button>
+        </div>
+        <div class="theme-toggle" id="themeToggle">
+          <button class="active" id="themeDark">🌙</button>
+          <button id="themeLight">☀️</button>
+        </div>
+        <a class="btn" href="../index.html" data-i18n="soft.back">← Về trang chủ</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ─── Intro (giống QHTools) ─── -->
+    <section class="project-detail" style="max-width:100%; padding-bottom:0;">
+      <a class="btn" href="QHTools.html" style="margin-bottom:24px;">← Quay lại QH-Tools</a>
+      <span class="section-label">HƯỚNG DẪN SỬ DỤNG</span>
+      <h1>QH-Tools — Hướng dẫn sử dụng</h1>
+      <p class="detail-desc">
+        Tổng hợp các video hướng dẫn cài đặt và sử dụng QH-Tools. Bấm vào từng mục để xem video hướng dẫn trên YouTube.
+      </p>
+    </section>
+
+    <!-- ─── Tutorial List ─── -->
+    <section class="tutorial-section">
+      <div class="tutorial-columns">
+
+        <!-- Cột trái -->
+        <div>
+          <div class="tut-group">
+            <div class="tut-group-title">Cài Đặt &amp; Thiết Lập</div>
+            <ul class="tut-list">
+              <li><a href="https://www.youtube.com/watch?v=LINK_1" target="_blank" rel="noreferrer">Cài đặt và update phần mềm QH-Tools<span class="yt-badge">YT</span></a></li>
+              <li><a href="https://www.youtube.com/watch?v=LINK_2" target="_blank" rel="noreferrer">Kích hoạt License sử dụng<span class="yt-badge">YT</span></a></li>
+              <li><a href="https://www.youtube.com/watch?v=LINK_3" target="_blank" rel="noreferrer">Giới thiệu giao diện tổng quan<span class="yt-badge">YT</span></a></li>
+            </ul>
+          </div>
+
+          <div class="tut-group">
+            <div class="tut-group-title">Kết Nối API</div>
+            <ul class="tut-list">
+              <li><a href="https://www.youtube.com/watch?v=LINK_4" target="_blank" rel="noreferrer">Kết nối liên tục thông qua API<span class="yt-badge">YT</span></a></li>
+              <li><a href="https://www.youtube.com/watch?v=LINK_5" target="_blank" rel="noreferrer">Tạo tiết diện, vật liệu, tải trọng tự động<span class="yt-badge">YT</span></a></li>
+              <li><a href="https://www.youtube.com/watch?v=LINK_6" target="_blank" rel="noreferrer">Xuất nội lực tiết diện tự động<span class="yt-badge">YT</span></a></li>
+            </ul>
+          </div>
+
+          <div class="tut-group">
+            <div class="tut-group-title">Excel Tính Toán</div>
+            <ul class="tut-list">
+              <li><a href="https://www.youtube.com/watch?v=LINK_7" target="_blank" rel="noreferrer">Thông tin Excel tính toán trực quan đầy đủ<span class="yt-badge">YT</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cột phải -->
+        <div>
+          <div class="tut-group">
+            <div class="tut-group-title">Móng Cọc</div>
+            <ul class="tut-list">
+              <li><a href="https://www.youtube.com/watch?v=LINK_8" target="_blank" rel="noreferrer">Vẽ móng cọc tự động hình dạng bất kì<span class="yt-badge">YT</span></a></li>
+            </ul>
+          </div>
+
+          <div class="tut-group">
+            <div class="tut-group-title">Tiện Ích Khác</div>
+            <ul class="tut-list">
+              <li><a href="https://www.youtube.com/watch?v=LINK_9" target="_blank" rel="noreferrer">Dọn rác từ Etabs / Safe / Sap2000 / AutoCAD<span class="yt-badge">YT</span></a></li>
+              <li><a href="https://www.youtube.com/watch?v=LINK_10" target="_blank" rel="noreferrer">[Video hướng dẫn khác — điền link]<span class="yt-badge">YT</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── Contact Section ─── -->
+    <section id="contact-tut" class="tutorial-contact">
+      <span class="section-label" data-i18n="contact.label">CONTACT</span>
+      <h2 data-i18n="contact.title">Liên hệ</h2>
+      <p class="sub" data-i18n="contact.sub">Kết nối với mình qua các kênh bên dưới</p>
+
+      <div class="contact-grid-tut">
+
+        <!-- Zalo + QR -->
+        <a class="zalo-card" href="tel:0834428402">
+          <div class="zalo-main">
+            <div class="contact-icon-tut">📱</div>
+            <div class="contact-info-tut">
+              <span class="contact-label-tut" data-i18n="contact.zalo">Zalo</span>
+              <span class="contact-value-tut" data-i18n="contact.zalo_val">083.442.8402</span>
+            </div>
+          </div>
+          <img src="../images/Admin_Zalo.jpg" alt="QR Zalo" class="zalo-qr" />
+        </a>
+
+        <!-- Email -->
+        <a class="contact-card-tut" href="mailto:Dinhngocquanghuy99@gmail.com">
+          <div class="contact-icon-tut">📧</div>
+          <div class="contact-info-tut">
+            <span class="contact-label-tut" data-i18n="contact.email">Email</span>
+            <span class="contact-value-tut" data-i18n="contact.email_val">Dinhngocquanghuy99@gmail.com</span>
+          </div>
+        </a>
+
+        <!-- Facebook -->
+        <a class="contact-card-tut" href="https://www.facebook.com/win.win.2908/" target="_blank" rel="noreferrer">
+          <div class="contact-icon-tut">👤</div>
+          <div class="contact-info-tut">
+            <span class="contact-label-tut" data-i18n="contact.fb">Facebook</span>
+            <span class="contact-value-tut" data-i18n="contact.fb_val">Quang Huy</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer class="footer">© <span id="year"></span> <span data-i18n="footer.copy">Đinh Ngọc Quang Huy</span></footer>
+  </main>
+
+  <script src="../lang.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const themeDark = document.getElementById("themeDark");
+    const themeLight = document.getElementById("themeLight");
+    function setTheme(m) {
+      if (m === "light") {
+        document.body.classList.add("light");
+        themeLight.classList.add("active");
+        themeDark.classList.remove("active");
+      } else {
+        document.body.classList.remove("light");
+        themeDark.classList.add("active");
+        themeLight.classList.remove("active");
+      }
+      localStorage.setItem("portfolio-theme", m);
+    }
+    setTheme(localStorage.getItem("portfolio-theme") || "dark");
+    themeDark.addEventListener("click", () => setTheme("dark"));
+    themeLight.addEventListener("click", () => setTheme("light"));
+
+    const langToggle = document.getElementById("langToggle");
+    const langBtns = langToggle.querySelectorAll("button");
+    langBtns.forEach(b => b.addEventListener("click", () => {
+      const l = b.getAttribute("data-lang");
+      langBtns.forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      applyLanguage(l);
+    }));
+    document.addEventListener("DOMContentLoaded", () => {
+      const s = localStorage.getItem("portfolio-lang") || "vi";
+      langBtns.forEach(b => b.classList.toggle("active", b.getAttribute("data-lang") === s));
+    });
+
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mainNav").classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
